@@ -1,0 +1,193 @@
+import { Dimensions, StyleSheet, Button } from "react-native";
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "#fff",
+  },
+  box: {
+    backgroundColor: "#fff",
+    // flexDirection: 'row',
+    paddingHorizontal: 20,
+    paddingVertical: 15,
+    borderBottomWidth: 0.5,
+    borderBottomColor: "#ccc",
+  },
+  messageButton: {
+    backgroundColor: "#2B2B2B",
+    marginLeft: Dimensions.get("window").width * 0.05,
+    height: 48,
+    borderRadius: 1000,
+    padding: 14,
+    marginBottom: "5%",
+  },
+  phoneButton: {
+    backgroundColor: "#2B2B2B",
+    // marginLeft: 40,
+    height: 48,
+    padding: 14,
+    borderRadius: 50,
+    marginBottom: "5%",
+  },
+  avatar: {
+    width: 40,
+    height: 40,
+    borderRadius: 25,
+    marginRight: 10,
+  },
+  infoContainer: {
+    justifyContent: "center",
+  },
+  name: {
+    fontWeight: "bold",
+    fontSize: Dimensions.get("window").height * 0.025,
+    marginTop: "8%",
+    paddingBottom: 3,
+    fontFamily: "Avenir",
+  },
+  occupation: {
+    color: "gray",
+    fontSize: Dimensions.get("window").height * 0.02,
+    paddingBottom: 7,
+    fontFamily: "Avenir",
+    flexWrap: "wrap",
+    width: Dimensions.get("window").width * 0.5,
+  },
+  location: {
+    fontSize: Dimensions.get("window").height * 0.017,
+    color: "gray",
+    fontFamily: "Avenir",
+  },
+  contact: {
+    fontWeight: "bold",
+    color: "gray",
+    fontSize: Dimensions.get("window").height * 0.02,
+    marginTop: "10%",
+    // marginLeft: Dimensions.get("window").width * 0.12,
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center",
+    alignSelf: "center",
+    paddingBottom: "7%",
+    fontFamily: "Avenir",
+  },
+  rating: {
+    fontWeight: "bold",
+    color: "gray",
+    fontSize: Dimensions.get("window").height * 0.02,
+    marginTop: "10%",
+    marginLeft: Dimensions.get("window").width * 0.15,
+    paddingBottom: Dimensions.get("window").height * 0.015,
+    fontFamily: "Avenir",
+  },
+  // NavBar styling
+  containerNav: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    height: 90, // You can adjust the height as needed
+    width: "100%",
+    position: "absolute",
+    bottom: 0,
+    paddingBottom: 15,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: -10 },
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+  },
+  tabButton: {
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1,
+  },
+  tabButtonIcon: {
+    width: 30,
+    height: 30,
+  },
+  tabButtonText: {
+    fontSize: 12,
+    color: "black",
+    fontWeight: "bold",
+    fontFamily: "Avenir",
+  },
+  tabButtonDisabledText: {
+    fontSize: 12,
+    color: "gray",
+    fontFamily: "Avenir",
+  },
+  // NavBar styling end
+
+  // Profile Header
+  titleCenter2: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    fontSize: Dimensions.get("window").height * 0.025,
+    marginRight: 60,
+    fontWeight: "bold",
+    marginTop: "5%",
+    fontFamily: "Avenir",
+  },
+  requestButtton: {
+    backgroundColor: "#232B2B",
+    height: 48,
+    padding: 14,
+    marginBottom: Dimensions.get("window").height * 0.01,
+    marginTop: Dimensions.get("window").height * 0.02,
+    // make the button smaller on smaller screens
+    width: Dimensions.get("window").width * 0.4,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 5,
+  },
+  requestButttonText: {
+    color: "#fff",
+    fontSize: Dimensions.get("window").height * 0.017,
+    fontWeight: "bold",
+    fontFamily: "Avenir",
+    textAlign: "center",
+  },
+  requestContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  // reviews
+  skillWrapper: {
+    backgroundColor: "#f2f2f2",
+    borderRadius: 20,
+    padding: 10,
+    marginHorizontal: Dimensions.get("window").width * 0.07,
+    marginVertical: Dimensions.get("window").height * 0.005,
+  },
+  skillText: {
+    color: "black",
+    fontFamily: "Avenir",
+    fontSize: Dimensions.get("window").width * 0.037,
+    paddingLeft: Dimensions.get("window").width * 0.02,
+  },
+  skillsHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginLeft: Dimensions.get("window").width * 0.07,
+    marginTop: Dimensions.get("window").height * 0.025,
+    marginBottom: Dimensions.get("window").height * 0.01,
+  },
+  skillsHeaderReviews: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginLeft: Dimensions.get("window").width * 0.07,
+    marginTop: Dimensions.get("window").height * 0.025,
+    // marginBottom: Dimensions.get("window").height * 0.01,
+  },
+  errorText: {
+    color: "gray",
+    fontSize: Dimensions.get("window").width * 0.035,
+    textAlign: "center",
+    fontFamily: "Avenir",
+  },
+});
